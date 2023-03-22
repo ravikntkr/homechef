@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Nav Bar styling */
+.navContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo {
+  color: #ee8512;
+  font-size: 32px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.buttonBox {
+  text-align: right;
+}
+
+.signUp,
+.logIn {
+  background-color: #ee8512;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logIn {
+  background-color: #fff;
+  color: #ee8512;
+  border: 2px solid #ee8512;
+}
+
+.logIn:hover {
+  background-color: #ee8512;
+  color: #fff;
+}
+
+/* Hero section styling */
+
+.hero {
+  max-width: 80%;
+  margin: 20px auto 0 auto;
+  background-image: linear-gradient(to right, #ee8412fd, #ee841226),
+    url(../images/main-bg.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 35px;
+  padding: 40px 35px;
+}
+
+.heroBadge {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 5px;
+}
+
+.heroSubTxt {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.heroButton {
+  background-color: #ffedda;
+  color: #ee8512;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.btnIcon {
+  margin-right: 7px;
+  font-size: 18px;
+}
+
+/* Search area styling */
+.searchField {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.searchData {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+
+.newBadge {
+  width: 30%;
+  text-align: right;
+}
+
+.inputSearch {
+  width: 80%;
+  background-color: #ffedda;
+  border: 0;
+  border-radius: 35px;
+  padding: 13px 30px;
+  color: #ee8512;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1.2s;
+}
+
+.inputSearch:focus {
+  outline: none;
+}
+
+.inputSearch::placeholder {
+  color: #ee8512;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.searchIcon {
+  margin-right: 7px;
+}
+
+.newBadgetxt {
+  font-size: 18px;
+  color: #ee8512;
+  background-color: #ee841200;
+  border-radius: 0px;
+  border-bottom: 2px dashed #ee8512;
+  padding: 13px 15px;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #ee8512;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+.arrowDown {
+  margin-left: 10px;
+  border-radius: 35px;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+.inputSearch2 {
+  display: none;
+}
+
+/* MealItem container styling */
+
+.mealItemContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2%;
+  flex-wrap: wrap;
+  padding: 40px 0 60px 0;
+}
+
+/* Meal card styling */
+
+.mealCard {
+  width: 32%;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.mealThumb {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 11px;
+}
+
+.mealName {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.mealCategory {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ee8512;
+  margin-top: 7px;
+}
+
+/* Meal index */
+
+.paginationTitle {
+  text-align: center;
+  font-size: 40px;
+}
+
+.paginationContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0 100px 0;
+}
+
+.numberBox {
+  background-color: #ee8512;
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.numberBox:hover {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+.pageNumber {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Recpie Details Page styling */
+/* ************************************** */
+
+.ingdMainContainer {
+  max-width: 80%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffedda;
+  border-radius: 20px;
+}
+
+.ingdleft {
+  flex-basis: 60%;
+  margin-bottom: -4px;
+}
+
+.ingdRight {
+  flex-basis: 40%;
+  padding: 0 20px 0 40px;
+}
+
+.recpieImage {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px 0 0 20px;
+}
+
+.recpieNamebg {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.ingdCategory,
+.ingdOrigin,
+.ingdTags {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.listIcon {
+  color: #ee8512;
+  font-size: 12px;
+  margin-right: 7px;
+}
+
+.badgeTxt {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.badgeIcon {
+  font-size: 18px;
+}
+
+/* Ingd items styling */
+/* /******************************************* */
+
+.ingdItemsContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.ingdHeading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ee8512;
+}
+
+.ingdItem {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+  border-top: 2px dotted #ee8512;
+  padding: 30px 0;
+}
+
+.ingdItems {
+  /* flex-basis: 18%; */
+  margin-bottom: 25px;
+  margin-right: 5px;
+  text-decoration: underline;
+  color: #000;
+  font-size: 18px;
+}
+
+.instructionContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.instarea {
+  border-top: 2px dotted #ee8512;
+  padding: 30px 0;
+}
+
+.instruction {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.VideoContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/* Footer area styling */
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footerContainer {
+  background-color: #ee8512;
+}
+
+.author {
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.author a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialIcons {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.socialIcons:hover {
+  background-color: #000;
+  border: 0;
+}
+
+.footerIcon {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 6px;
+}
