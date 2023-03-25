@@ -7,6 +7,28 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ee8512;
+  border-radius: 35px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  border-radius: 35px;
+}
+
 /* Nav Bar styling */
 .navContainer {
   max-width: 80%;
